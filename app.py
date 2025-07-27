@@ -8,7 +8,8 @@ vectorizer = joblib.load("vectorizer.joblib")
 st.title("📰 News Article Classifier")
 st.markdown("Enter a news article below and find out if it's **Fake** or **Real**!")
 
-input_text = st.text_area("Breaking news: Government announces big economic reform package.")
+input_text = st.text_area("Paste your article here:")
+
 
 if st.button("Predict"):
     if input_text.strip() == "":
